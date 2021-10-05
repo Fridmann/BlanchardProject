@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Blanchard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container header__container-top">
+                <a class="header__logo" href=""></a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list-top">
+                        <li class="header__item">
+                            <a class="header__link" href="#section-about">О нас</a>
+                            <a class="header__link_burger" href="#section-about">О нас</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#section-galery">Галерея</a>
+                            <a class="header__link_burger" href="#section-galery">Галерея</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#section-catalog">Каталог</a>
+                            <a class="header__link_burger" href="#section-catalog">Каталог</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#section-events">События</a>
+                            <a class="header__link_burger" href="#section-events">События</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#section-editions">Издания</a>
+                            <a class="header__link_burger" href="#section-editions">Издания</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#section-projects">Проекты</a>
+                            <a class="header__link_burger" href="#section-projects">Проекты</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#section-contacts">Контакты</a>
+                            <a class="header__link_burger" href="#section-contacts">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__login_burger" href="">Войти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__login" href="">Войти</a>
+                <div class="header__search">
+                    <div>
+                        <input type="text" placeholder="Search . . ." required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container header__container-bottom">
+                <div class="header__select">
+                    <input class="header__select-input" type="hidden" name="">
+                    <div class="header__select-head">Реализм</div>
+                    <ul data-simplebar class="simplebar" style="display: none;">
+                        <li class="header__select-item">Тинторетто</li>
+                        <li class="header__select-item">Фридрих</li>
+                        <li class="header__select-item">Леонардо</li>
+                        <li class="header__select-item">Верроккьо</li>
+                        <li class="header__select-item">Леонардо</li>
+                        <li class="header__select-item">Верроккьо</li>
+                    </ul>
+                </div>
+                <div class="header__select">
+                    <input class="header__select-input" type="hidden" name="">
+                    <div class="header__select-head">Импрессионизм</div>
+                    <ul data-simplebar class="simplebar" style="display: none;">
+                        <li class="header__select-item">Моне</li>
+                        <li class="header__select-item">Сислей</li>
+                        <li class="header__select-item">Мане</li>
+                        <li class="header__select-item">Ренуар</li>
+                        <li class="header__select-item">Мане</li>
+                        <li class="header__select-item">Ренуар</li>
+                    </ul>
+                </div>
+                <div class="header__select">
+                    <input class="header__select-input" type="hidden" name="">
+                    <div class="header__select-head">Постимпрессионизм</div>
+                    <ul data-simplebar class="simplebar" style="display: none;">
+                        <li class="header__select-item">Ван Гог</li>
+                        <li class="header__select-item">Сезанн</li>
+                        <li class="header__select-item">Гоген</li>
+                        <li class="header__select-item">Сёра</li>
+                        <li class="header__select-item">Мане</li>
+                        <li class="header__select-item">Ренуар</li>
+                    </ul>
+                </div>
+                <div class="header__select">
+                    <input class="header__select-input" type="hidden" name="">
+                    <div class="header__select-head">Авангард</div>
+                    <ul data-simplebar class="simplebar" style="display: none;">
+                        <li class="header__select-item">Кандинский</li>
+                        <li class="header__select-item">Маринетти</li>
+                        <li class="header__select-item">Малевич</li>
+                        <li class="header__select-item">Пикассо</li>
+                        <li class="header__select-item">Мане</li>
+                        <li class="header__select-item">Ренуар</li>
+                    </ul>
+                </div>
+                <div class="header__select">
+                    <input class="header__select-input" type="hidden" name="">
+                    <div class="header__select-head">Футуризм</div>
+                    <ul data-simplebar class="simplebar" style="display: none;">
+                        <li class="header__select-item">Карра</li>
+                        <li class="header__select-item">Прателла</li>
+                        <li class="header__select-item">Северини</li>
+                        <li class="header__select-item">Балла</li>
+                        <li class="header__select-item">Мане</li>
+                        <li class="header__select-item">Ренуар</li>
+                    </ul>
+                </div>
+                <!-- SELECT SCRIPT -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <form class="header__search" action="" method="get">
+                    <button class="header__search-button" type="submit"></button>
+                    <input class="header__search-input" name="search" placeholder="Поиск по сайту" type="search">
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-hero">
+            <div class="container section-hero__container">
+                <div class="section-hero__content">
+                    <h1 class="section-hero__heading">Прикоснитесь к прекрасному</h1>
+                    <p class="section-hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                    <a href="#section-contacts" class="section-hero__button">Подписаться на рассылку</a>
+                </div>
+            </div>
+        </section>
+        <section id="section-about" class="section-about">
+            <div class="container section-about__container">
+                <h2 class="section-about__heading">О нас</h2>
+                <p class="section-about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+            </div>
+        </section>
+        <section id="section-galery" class="section-galery">
+            <div class="container section-galery__container">
+                <div class="section-galery__main">
+                    <div class="section-galery__content">
+                        <h2 class="section-galery__heading">Галерея</h2>
+                        <p class="section-galery__filter">Фильтр:</p>
+                        <div class="section-galery__select">
+                            <input class="section-galery__select-input" type="hidden" name="">
+                            <div class="section-galery__select-head">Живопись</div>
+                            <ul class="section-galery__select-list" style="display: none;">
+                                <li class="section-galery__select-item">Рисунок</li>
+                                <li class="section-galery__select-item">Скульптура</li>
+                            </ul>
+                        </div>
+                        <!-- SELECT SCRIPT -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                        <p class="section-galery__text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="section-galery__link" href="">авторизуйтесь,</a> либо воспользуйтесь лицензией.</p> 
+                    </div>
+                    <div class="swiper section-galery__swiper">
+                        <div class="swiper-wrapper section-galery__swiper-wrapper">
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide section-galery__swiper-slide">
+                                <img src="img/galery-painting-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev section-galery__swiper-button-prev"></div>
+                        <div class="swiper-button-next section-galery__swiper-button-next"></div>
+                        <div class="swiper-pagination section-galery__swiper-pagination"></div>
+                    </div>
+                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                </div>
+            </div>
+        </section>
+        <section id="section-catalog" class="section-catalog">
+            <div class="container section-catalog__container">
+                <div class="section-catalog__top">
+                    <h2 class="section-catalog__heading">Каталог</h2>
+                    <ul class="section-catalog__list">
+                        <li class="section-catalog__item">
+                            <button class="section-catalog__button" data-path="one"></button>
+                        </li>
+                        <li class="section-catalog__item">
+                            <button class="section-catalog__button" data-path="two"></button>
+                        </li>
+                        <li class="section-catalog__item">
+                            <button class="section-catalog__button section-catalog__button-active" data-path="three"></button>
+                        </li>
+                        <li class="section-catalog__item">
+                            <button class="section-catalog__button" data-path="four"></button>
+                        </li>
+                        <li class="section-catalog__item">
+                            <button class="section-catalog__button" data-path="five"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog-content" data-target="one">
+                    <p class="section-catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+                    <div class="section-catalog__main">
+                        <div class="section-catalog__left">
+                            <img class="section-catalog__img" src="img/catalog-none.jpg" alt="">
+                            <strong class="section-catalog__name">Что мы о нём знаем?</strong>
+                            <!-- <p class="section-catalog__date">2 июня 1448 — 11 января 1494.</p> -->
+                            <p class="section-catalog__description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                        </div>
+                        <div class="section-catalog__right">
+                            <ul id="accordion">
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1400 по 1499 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1500 по 1599 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1600 по 1699 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1700 по 1799 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1800 по 1899 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1900 по 1999 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 2000 г.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-content" data-target="two">
+                    <p class="section-catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+                    <div class="section-catalog__main">
+                        <div class="section-catalog__left">
+                            <img class="section-catalog__img" src="img/catalog-none.jpg" alt="">
+                            <strong class="section-catalog__name">Что мы о нём знаем?</strong>
+                            <!-- <p class="section-catalog__date">2 июня 1448 — 11 января 1494.</p> -->
+                            <p class="section-catalog__description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                        </div>
+                        <div class="section-catalog__right">
+                            <ul id="accordion_2">
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1400 по 1499 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1500 по 1599 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1600 по 1699 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1700 по 1799 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1800 по 1899 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1900 по 1999 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 2000 г.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-content catalog-content-active" data-target="three">
+                    <p class="section-catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+                    <div class="section-catalog__main">
+                        <div class="section-catalog__left">
+                            <img class="section-catalog__img" src="img/catalog-italy-girlandayo.jpg" alt="">
+                            <strong class="section-catalog__name">Доменико Гирландайо</strong>
+                            <p class="section-catalog__date">2 июня 1448 — 11 января 1494.</p>
+                            <p class="section-catalog__description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+                        </div>
+                        <div class="section-catalog__right">
+                            <ul id="accordion_3">
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1400 по 1499 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <ul class="section-catalog__accordion-list">
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Бенедетто ди Биндо</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Бергоньоне, Амброджо</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Биссоло, Франческо</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Больтраффио, Джованни</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Бонсиньори, Франческо</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Боттичини, Рафаэлло</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Брамантино</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Бреа, Людовико</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Бьяджо д’Антонио Туччи</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Веккьетта</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Андреа Верроккьо</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Доменико Гирландайо</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Беноццо Гоццоли</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Граначчи, Франческо</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Грегорио ди Чекко</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Джованни да Удине</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Джованни ди Паоло</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Джорджоне</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Парентино, Бернардо</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Пезеллино</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Пьетро Перуджино</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Перуцци, Бальдассаре</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Пизанелло</a></li>
+                                            <li class="section-catalog__accordion-item"><a class="section-catalog__accordion-artist" href="">Пинтуриккьо</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1500 по 1599 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1600 по 1699 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1700 по 1799 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1800 по 1899 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1900 по 1999 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 2000 г.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-content" data-target="four">
+                    <p class="section-catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+                    <div class="section-catalog__main">
+                        <div class="section-catalog__left">
+                            <img class="section-catalog__img" src="img/catalog-none.jpg" alt="">
+                            <strong class="section-catalog__name">Что мы о нём знаем?</strong>
+                            <!-- <p class="section-catalog__date">2 июня 1448 — 11 января 1494.</p> -->
+                            <p class="section-catalog__description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                        </div>
+                        <div class="section-catalog__right">
+                            <ul id="accordion_4">
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1400 по 1499 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1500 по 1599 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1600 по 1699 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1700 по 1799 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1800 по 1899 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1900 по 1999 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 2000 г.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-content" data-target="five">
+                    <p class="section-catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+                    <div class="section-catalog__main">
+                        <div class="section-catalog__left">
+                            <img class="section-catalog__img" src="img/catalog-none.jpg" alt="">
+                            <strong class="section-catalog__name">Что мы о нём знаем?</strong>
+                            <!-- <p class="section-catalog__date">2 июня 1448 — 11 января 1494.</p> -->
+                            <p class="section-catalog__description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                        </div>
+                        <div class="section-catalog__right">
+                            <ul id="accordion_5">
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1400 по 1499 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1500 по 1599 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1600 по 1699 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1700 по 1799 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1800 по 1899 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 1900 по 1999 гг.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <h3 class="accordion-header">С 2000 г.</h3>
+                                    <div class="section-catalog__accordion-main">
+                                        <div class="section-catalog__accordion-icon"></div>
+                                        <div class="section-catalog__accordion-content">
+                                            <strong class="section-catalog__accordion-heading">Здесь пока пусто</strong>
+                                            <p class="section-catalog__accordion-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                            <a class="section-catalog__accordion-link" href="">В галерею</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            </div>
+        </section>
+        <section id="section-events" class="section-events">
+            <div class="container section-events__container">
+                <h2 class="section-events__heading">События</h2>
+                <ul class="section-events__list">
+                    <li class="section-events__item">
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="img/events-img-1-mobile.jpg">
+                            <source media="(max-width: 767px)" srcset="img/events-img-1-768.jpg">
+                            <source media="(max-width: 1023px)" srcset="img/events-img-1-1024.jpg">
+                            <source media="(min-width: 1024px)" srcset="img/events-img-1.jpg">
+                            <img class="section-events__img" src="img/events-img-1.jpg" alt="">
+                        </picture>
+                            <p class="section-events__img-desc">Музей им. Щусева с&nbsp;20&nbsp;марта по 30 апреля</p>
+                            <h3 class="section-events__headline">Книжная гравюра в живом восприятии</h3>
+                            <p class="section-events__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                            <a class="section-events__link" href="">Подробнее</a>
+                    </li>
+                    <li class="section-events__item">
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="img/events-img-2-mobile.jpg">
+                            <source media="(max-width: 767px)" srcset="img/events-img-2-768.jpg">
+                            <source media="(max-width: 1023px)" srcset="img/events-img-2-1024.jpg">
+                            <source media="(min-width: 1024px)" srcset="img/events-img-2.jpg">
+                            <img class="section-events__img" src="img/events-img-2.jpg" alt="">
+                        </picture>
+                            <p class="section-events__img-desc">ММОМА 24&nbsp;марта 19:00</p>
+                            <h3 class="section-events__headline">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                            <p class="section-events__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                            <a class="section-events__link" href="">Подробнее</a>
+                    </li>
+                    <li class="section-events__item">
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="img/events-img-3-mobile.jpg">
+                            <source media="(max-width: 767px)" srcset="img/events-img-3-768.jpg">
+                            <source media="(max-width: 1023px)" srcset="img/events-img-3-1024.jpg">
+                            <source media="(min-width: 1024px)" srcset="img/events-img-3.jpg">
+                            <img class="section-events__img" src="img/events-img-3.jpg" alt="">
+                        </picture>
+                            <p class="section-events__img-desc">Еврейский музей с&nbsp;31&nbsp;марта по 21 апреля</p>
+                            <h3 class="section-events__headline">Выставка «Формация 2020»</h3>
+                            <p class="section-events__text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                            <a class="section-events__link" href="">Подробнее</a>
+                    </li>
+                    <li class="section-events__item section-events__item-hide">
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="img/events-img-4-mobile.jpg">
+                            <source media="(max-width: 767px)" srcset="img/events-img-4-768.jpg">
+                            <source media="(max-width: 1023px)" srcset="img/events-img-4-1024.jpg">
+                            <source media="(min-width: 1024px)" srcset="img/events-img-4.jpg">
+                            <img class="section-events__img" src="img/events-img-4.jpg" alt="">
+                        </picture>
+                            <p class="section-events__img-desc">Третьяковка на Крымском валу с 30 марта по 30 апреля</p>
+                            <h3 class="section-events__headline">XXIV Международная биеннале молодого искусства</h3>
+                            <p class="section-events__text">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+                            <a class="section-events__link" href="">Подробнее</a>
+                    </li>
+                    <li class="section-events__item section-events__item-hide">
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="img/events-img-5-mobile.jpg">
+                            <source media="(max-width: 767px)" srcset="img/events-img-5-768.jpg">
+                            <source media="(max-width: 1023px)" srcset="img/events-img-5-1024.jpg">
+                            <source media="(min-width: 1024px)" srcset="img/events-img-5.jpg">
+                            <img class="section-events__img" src="img/events-img-5.jpg" alt="">
+                        </picture>
+                            <p class="section-events__img-desc">ММАМ с 8 апреля по 20 мая</p>
+                            <h3 class="section-events__headline">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                            <p class="section-events__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                            <a class="section-events__link" href="">Подробнее</a>
+                    </li>
+                    <div class="section-events__btn">
+                        <button class="section-events__btn-more">Все события</button>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section id="section-editions" class="section-editions">
+            <div class="container section-editions__container">
+                <div class="section-editions__main">
+                    <div class="section-editions__left">
+                        <h2 class="section-editions__heading">Издания</h2>
+                        <div class="section-checbox">
+                            <h3 class="section-checbox__headline">Категории</h3>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_1">
+                                <label for="checkbox_1">Бестселлеры</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_2">
+                                <label for="checkbox_2">Искусство</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_3">
+                                <label for="checkbox_3">Архитектура</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_4">
+                                <label for="checkbox_4">Дизайн</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_5">
+                                <label for="checkbox_5">Мода</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_6">
+                                <label for="checkbox_6">Детям</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_7">
+                                <label for="checkbox_7">Художественная литература</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_8">
+                                <label for="checkbox_8">Публицистика</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_9">
+                                <label for="checkbox_9">Путеводители</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_10">
+                                <label for="checkbox_10">Философия</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_11">
+                                <label for="checkbox_11">Учебная литература</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_12">
+                                <label for="checkbox_12">Журналы и газеты</label>
+                            </div>
+                        </div>
+                        <div class="section-editions__price">
+                            <h3 class="section-editions__price-heading">Цена</h3>
+                            <div class="section-editions__price-content">
+                                <div class="section-editions__price-text">От</div>
+                                <input class="section-editions__price-input" min="1" max="5" type="number" name="" id="">
+                                <div class="section-editions__price-text">до</div>
+                                <input class="section-editions__price-input" min="1" max="5" type="number" name="" id="">
+                                <div class="section-editions__price-text">руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper section-editions__swiper">
+                        <div class="swiper-wrapper section-editions__swiper-wrapper">
+                            <div class="swiper-slide section-editions__swiper-slide">
+                                <div class="section-editions__swiper-item">
+                                    <img class="section-editions__img" src="img/editions-img-1.jpg" alt="">
+                                    <div class="section-editions__swiper-content">
+                                        <h4 class="section-editions__swiper-headline">Искусство цвета</h4>
+                                        <p class="section-editions__swiper-price">620 руб</p>
+                                    </div>
+                                    <p class="section-editions__swiper-name">Иттен, Иоханнес</p>
+                                    <button class="section-editions__swiper-btn">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide section-editions__swiper-slide">
+                                <div class="section-editions__swiper-item">
+                                    <img class="section-editions__img" src="img/editions-img-2.jpg" alt="">
+                                    <div class="section-editions__swiper-content">
+                                        <h4 class="section-editions__swiper-headline">Типографика</h4>
+                                        <p class="section-editions__swiper-price">2 450 руб</p>
+                                    </div>
+                                    <p class="section-editions__swiper-name">Рудер, Эмиль</p>
+                                    <button class="section-editions__swiper-btn">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide section-editions__swiper-slide">
+                                <div class="section-editions__swiper-item">
+                                    <img class="section-editions__img" src="img/editions-img-3.jpg" alt="">
+                                    <div class="section-editions__swiper-content">
+                                        <h4 class="section-editions__swiper-headline">Книга про буквы</h4>
+                                        <p class="section-editions__swiper-price">2 200 руб</p>
+                                    </div>
+                                    <p class="section-editions__swiper-name">Гордон, Юрий</p>
+                                    <button class="section-editions__swiper-btn">Заказать</button>
+                                </div>
+                            </div>    
+                            <div class="swiper-slide section-editions__swiper-slide">
+                                <div class="section-editions__swiper-item">
+                                    <img class="section-editions__img" src="img/editions-img-4.jpg" alt="">
+                                    <div class="section-editions__swiper-content">
+                                        <h4 class="section-editions__swiper-headline">Николай Ильин</h4>
+                                        <p class="section-editions__swiper-price">1 100 руб</p>
+                                    </div>
+                                    <p class="section-editions__swiper-name">Кричевский, Владимир</p>
+                                    <button class="section-editions__swiper-btn">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide section-editions__swiper-slide">
+                                <div class="section-editions__swiper-item">
+                                    <img class="section-editions__img" src="img/editions-img-5.jpg" alt="">
+                                    <div class="section-editions__swiper-content">
+                                        <h4 class="section-editions__swiper-headline">Модульные сетки в граф...</h4>
+                                        <p class="section-editions__swiper-price">1 450 руб</p>
+                                    </div>
+                                    <p class="section-editions__swiper-name">Мюллер-Брокманн, Йозеф</p>
+                                    <button class="section-editions__swiper-btn">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide section-editions__swiper-slide">    
+                                <div class="section-editions__swiper-item">
+                                    <img class="section-editions__img" src="img/editions-img-6.jpg" alt="">
+                                    <div class="section-editions__swiper-content">
+                                        <h4 class="section-editions__swiper-headline">Эволюция графических ст...</h4>
+                                        <p class="section-editions__swiper-price">3 200 руб</p>
+                                    </div>
+                                    <p class="section-editions__swiper-name">Хеллер, Чваст</p>
+                                    <button class="section-editions__swiper-btn">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide section-editions__swiper-slide">
+                                <div class="section-editions__swiper-item">
+                                    <img class="section-editions__img" src="img/editions-img-7.jpg" alt="">
+                                    <div class="section-editions__swiper-content">
+                                        <h4 class="section-editions__swiper-headline">Искусство и визуальное в...</h4>
+                                        <p class="section-editions__swiper-price">2 200 руб</p>
+                                    </div>
+                                    <p class="section-editions__swiper-name">Арнхейм, Рудольф </p>
+                                    <button class="section-editions__swiper-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev section-editions__swiper-button-prev"></div>
+                        <div class="swiper-button-next section-editions__swiper-button-next"></div>
+                        <div class="swiper-pagination section-editions__swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-projects" class="section-projects">
+            <div class="container section-projects__container">
+                <h2 class="section-projects__heading">Проекты</h2>
+                <p class="section-projects__text">
+                    Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности 
+                    однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые 
+                    государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего 
+                    возрастает их статус бесполезности. Прежде всего, постоянное информационно-&zwj;пропагандистское
+                    <button id="myButton_1" class="tooltip"></button> обеспечение нашей деятельности 
+                    однозначно фиксирует необходимость экономической 
+                    целесообразности принимаемых решений. И нет сомнений, что действия представителей 
+                    оппозиции могут быть рассмотрены <button id="myButton_2" class="tooltip"></button> исключительно
+                    в разрезе маркетинговых и финансовых <button id="myButton_3" class="tooltip"></button>    
+                    предпосылок. Банальные, но неопровержимые выводы, а также представители 
+                    современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, 
+                    должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
+                    Подробнее: <a class="section-projects__link" href="">blanchard-art.ru/projects/about</a>
+                </p>
+                <script src="https://unpkg.com/@popperjs/core@2"></script>
+                <script src="https://unpkg.com/tippy.js@6"></script>
+                <h3 class="section-projects__headline">Партнёры проектов:</h3>
+                <div class="swiper section-projects__swiper">
+                    <div class="swiper-wrapper section-projects__swiper-wrapper">
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-5.png" alt="">   
+                        </div>
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-7.png" alt=""> 
+                        </div>
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-8.png" alt="">  
+                        </div>
+                        <div class="swiper-slide section-projects__swiper-slide">
+                            <img class="section-projects__img" src="img/projects-img-9.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev section-projects__swiper-button-prev"></div>
+                    <div class="swiper-button-next section-projects__swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section id="section-contacts" class="section-contacts">
+            <div class="container section-contacts__container">
+                <h2 class="section-contacts__heading">Контакты</h2>
+                <div class="section-contacts__main">
+                    <div class="section-contacts__left">
+                        <div class="section-contacts__left-content">
+                            <h3 class="section-contacts__headline">Шоурум №4</h3>
+                            <p class="section-contacts__place">Леонтьевский переулок, дом 5/1</p>
+                            <form action class="section-contacts__form" novalidate="novalidate">
+                                <label class="section-contacts__label" for="form">Заказать обратный звонок</label>
+                                <div class="section-contacts__input-div"><input class="section-contacts__form-input" name="Имя" type="text" placeholder="Имя*" data-validate-field="name"></div>
+                                <div class="section-contacts__input-div"><input class="section-contacts__form-input" name="Телефон" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone" inputmode="text"></div>
+                                <button class="section-contacts__form-btn">Заказать</button>
+                            </form>
+                            <script src="js/just-validate.min.js"></script>
+                            <script src="js/inputmask.min.js"></script>
+                            <script>
+                                var selector = document.querySelector("input[type='tel']");
+                                var im = new Inputmask("+7(999)999-99-99");
+                    
+                                im.mask(selector);
+                    
+                                new JustValidate('.section-contacts__form', {
+                                    colorWrong: '#D11616',
+                                    rules: {
+                                        name: {
+                                            required: true,
+                                            minLenght: 2,
+                                            maxLenght: 15
+                                        },
+                                        tel: {
+                                            required: true,
+                                            function: (name, value) => {
+                                                const phone = selector.inputmask.unmaskedvalue()
+                                                return Number(phone) && phone.length === 10
+                                            }
+                                        },
+                                    },
+                                    messages: {
+                                    name: 'Недопустимый формат',
+                                    tel: 'Недопустимый формат',
+                                    },
+                                });
+                            </script>
+                            <p class="section-contacts__text">Связаться в один клик</p>
+                            <ul class="section-contacts__socials-list">
+                                <li class="section-contacts__socials-item"><a class="section-contacts__link" href=""><img class="section-contacts__img-link" src="img/Whatsapp-Icon.svg" alt=""></a></li>
+                                <li class="section-contacts__socials-item"><a class="section-contacts__link" href=""><img class="section-contacts__img-link" src="img/Telegram-icon.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-contacts__right">
+                        <div id="map" style="width: 100%; height: 700px;"></div>
+                        <script type="text/javascript">
+                            ymaps.ready(init);
+                            function init(){
+                                var myMap = new ymaps.Map("map", {
+                                    center: [55.75880080725477,37.602274036384486],
+                                    zoom: 15,
+                                    controls: []
+                                });
+
+                                var zoomControl = new ymaps.control.ZoomControl({
+                                    options: {
+                                    size: "small"
+                                    }
+                                });
+                                myMap.controls.add(zoomControl);
+                
+                                var myPlacemark = new ymaps.Placemark([55.75842874518144,37.6011957883605], {}, {
+                                iconLayout: 'default#image',
+                                iconImageHref: 'img/placemark.svg',
+                                iconImageSize: [20, 20],
+                                iconImageOffset: [1, 1]
+                            });
+                
+                            myMap.geoObjects.add(myPlacemark);
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <ul class="footer__list">
+                <a class="footer__link" href=""></a>
+                <a class="footer__link" href=""></a>
+                <a class="footer__link" href=""></a>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $(".header__nav, .section-hero__content").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+ 
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+ 
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+         
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1000);
+        });
+    });
+    </script>
+
+    <script src="js/accordion.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/select-galery.js"></script>
+    <script src="js/select-header.js"></script>
+    <script src="js/show-more.js"></script>
+    <script src="js/swiper-galery.js"></script>
+    <script src="js/swiper-editions.js"></script>
+    <script src="js/swiper-projects.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/tippy.js"></script>
+
+</body>
+</html>
