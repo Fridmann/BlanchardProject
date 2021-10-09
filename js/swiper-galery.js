@@ -1,12 +1,12 @@
 var swiper = new Swiper(".section-galery__swiper", {
   spaceBetween: 50,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination--right",
     type: "fraction",
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-btn--next',
+    prevEl: '.swiper-btn--prev',
   },
   breakpoints: {
     1280: {
@@ -20,6 +20,7 @@ var swiper = new Swiper(".section-galery__swiper", {
       grid: {
         rows: 2,
       },
+      spaceBetween: 34,
     },
     320: {
       slidesPerView: 1,

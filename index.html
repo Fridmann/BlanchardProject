@@ -55,14 +55,14 @@
                             <a class="header__link_burger" href="#section-contacts">Контакты</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__login_burger" href="">Войти</a>
+                            <button class="header__login_burger" href="">Войти</button>
                         </li>
                     </ul>
                 </nav>
                 <a class="header__login" href="">Войти</a>
                 <div class="header__search">
                     <div>
-                        <input type="text" placeholder="Search . . ." required>
+                        <input type="text" placeholder="Поиск" required>
                     </div>
                 </div>
             </div>
@@ -156,67 +156,94 @@
         </section>
         <section id="section-galery" class="section-galery">
             <div class="container section-galery__container">
-                <div class="section-galery__main">
-                    <div class="section-galery__content">
-                        <h2 class="section-galery__heading">Галерея</h2>
-                        <p class="section-galery__filter">Фильтр:</p>
-                        <div class="section-galery__select">
-                            <input class="section-galery__select-input" type="hidden" name="">
-                            <div class="section-galery__select-head">Живопись</div>
-                            <ul class="section-galery__select-list" style="display: none;">
-                                <li class="section-galery__select-item">Рисунок</li>
-                                <li class="section-galery__select-item">Скульптура</li>
-                            </ul>
-                        </div>
-                        <!-- SELECT SCRIPT -->
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                        <p class="section-galery__text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="section-galery__link" href="">авторизуйтесь,</a> либо воспользуйтесь лицензией.</p> 
+                <div class="section-galery__left-content">
+                    <h2 class="section-galery__heading">Галерея</h2>
+                    <p class="section-galery__filter">Фильтр:</p>
+                    <div class="section-galery__select">
+                        <input class="section-galery__select-input" type="hidden" name="">
+                        <div class="section-galery__select-head">Живопись</div>
+                        <ul class="section-galery__select-list" style="display: none;">
+                            <li class="section-galery__select-item">Рисунок</li>
+                            <li class="section-galery__select-item">Скульптура</li>
+                        </ul>
                     </div>
-                    <div class="swiper section-galery__swiper">
-                        <div class="swiper-wrapper section-galery__swiper-wrapper">
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-2.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-3.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-4.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide section-galery__swiper-slide">
-                                <img src="img/galery-painting-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev section-galery__swiper-button-prev"></div>
-                        <div class="swiper-button-next section-galery__swiper-button-next"></div>
-                        <div class="swiper-pagination section-galery__swiper-pagination"></div>
-                    </div>
-                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                    <!-- SELECT SCRIPT -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <p class="section-galery__text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="section-galery__link" href="">авторизуйтесь,</a> либо воспользуйтесь лицензией.</p> 
                 </div>
+                <div class="swiper section-galery__swiper">
+                    <div class="swiper-right-btns">
+                        <button class="sw-btn swiper-btn--prev"></button>
+                        <div class="swiper-pagination--right"></div>
+                        <button class="sw-btn swiper-btn--next"></button>
+                    </div>
+                    <div class="swiper-wrapper section-galery__swiper-wrapper">
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-1.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-2.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-3.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-4.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-5.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-6.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-7.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-8.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-9.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-10.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-11.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide section-galery__swiper-slide">
+                            <picture>
+                                <img class="swiper-slide--img" src="img/galery-painting-12.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-prev section-galery__swiper-button-prev"></div>
+                    <div class="swiper-button-next section-galery__swiper-button-next"></div>
+                    <div class="swiper-pagination section-galery__swiper-pagination"></div> -->
+                </div>
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
             </div>
         </section>
         <section id="section-catalog" class="section-catalog">
