@@ -5,7 +5,7 @@ if ($(this).hasClass('open')) {
     $(this).next().fadeOut();
 } else {
     $('.header__select-head').removeClass('open');
-    $('.simplebar').fadeOut();
+    $('.header__select-list').fadeOut();
     $(this).addClass('open');
     $(this).next().fadeIn();
 }
@@ -21,7 +21,7 @@ $(this).parent().prev().prev().val($(this).text());
 $(document).click(function (e) {
 if (!$(e.target).closest('.header__select').length) {
     $('.header__select-head').removeClass('open');
-    $('.simplebar').fadeOut();
+    $('.header__select-list').fadeOut();
 }
 });
 });

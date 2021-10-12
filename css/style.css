@@ -67,13 +67,14 @@ ul {
 
 .header__top {
     background-color: #000;
-    height: 102px;
 }
 
 .header__container-top {
     display: flex;
     align-items: center;
-    padding-top: 32px;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .header__logo {
@@ -81,30 +82,32 @@ ul {
     background-size: cover;
     width: 173px;
     height: 40px;
-    margin-right: auto;
 }
 
 .header__burger {
     display: none;
 }
 
-.header__list-top {
-    display: flex;
+.header__nav {
+    width: 62%;
 }
 
-.header__item:not(:last-child) {
-    margin-right: 62px;
+.header__list-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item {
+    margin-right: 34px;
 }
 
 .header__link {
+    position: relative;
     color: var(--second-text-color);
     font-size: 18px;
     font-weight: 600;
+    z-index: 10;    
     transition: color .3s ease-out;
-}
-
-.header__link_burger {
-    display: none;
 }
 
 .header__link:hover {
@@ -115,34 +118,62 @@ ul {
     color: #7943A4;
 }
 
+.header__link:focus-visible::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    bottom: -2px;
+    left: -5px;         
+    background-color: #7943A4;
+    z-index: -1;
+}
+
 .header__login {
+    position: relative;
     color: var(--second-text-color);
     font-size: 18px;
     font-weight: 300;
-    background: url(../img/login_icon.svg) no-repeat;
-    background-position: left;
-    padding-left: 20px;
-    margin-left: 280px;
-    transition: color .2s ease-out, background .2s ease-out;
+    z-index: 10;
+    transition: color .2s ease-out;
+}
+
+.header__login path {
+    transition: fill .2s ease-out;
 }
 
 .header__login:hover {
     color: #C283F3;
-    background: url(../img/login_icon-hover.svg) no-repeat;
-    background-position: left;
+}
+
+.header__login:hover path {
+    fill: #C283F3;
 }
 
 .header__login:active {
-    color: #9d5cd0;
-    background: url(../img/login_icon-active.svg) no-repeat;
-    background-position: left;
+    color: #9D5CD0;
+}
+
+.header__login:active path {
+    fill: #9D5CD0;
+}
+
+.header__login:focus-visible::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    bottom: -3px;
+    left: -5px;
+    background-color: #7943A4;
+    z-index: -1;
 }
 
 .header__login_burger {
     display: none;
 }
 
-.header__search {
+.header__search-mobile {
     display: none;
 }
 
@@ -150,31 +181,30 @@ ul {
     position: absolute;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.4);
-    height: 70px;
     width: 100%;
     z-index: 1;
 }
 
 .header__container-bottom {
     display: flex;
-    padding: 22px 12px 0 10px;
+    justify-content: space-between;
+    padding: 26px 12px 18px 10px;
 }
 
-.header__list-bottom {
+.header__select-nav {
     display: flex;
+    justify-content: space-between;
+    width: 66%;
 }
 
 .header__select {
-    padding-top: 6px;
-    margin-right: 113.5px;
-}
-
-.header__select:nth-child(5) {
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 .header__select-head {
    color: var(--second-text-color);
+   background: transparent;
+   border: 0;
    font-size: 18px;
    font-weight: 300;
    position: relative;
@@ -182,35 +212,39 @@ ul {
    transition: color .2s ease-out; 
 }
 
+.header__select-head path {
+    transition: stroke .2s ease-out;
+}
+
+.header__select-head.open path {
+    transform: translateY(80%) rotateX(180deg);
+}
+
 .header__select-head:hover {
     color: #9D5CD0;
+}
+
+.header__select-head:hover path {
+    stroke: #9D5CD0;
 }
 
 .header__select-head:active {
     color: #7943A4;
 }
 
-.header__select-head::after {
-    width: 12px;
-    height: 12px;
-    background: url(../img/menu-selector-icon.svg) no-repeat;
-    position: absolute;
-    right: -15.5px;
-    bottom: 30%;
-    transform: translateY(50%);
+.header__select-head:active path {
+    stroke: #7943A4;
+}
+
+.header__select-head:focus-visible::after {
     content: '';
-    display: block;
-    transition: all .1s ease-out;
-}
-
-.header__select-head:hover::after {
-    background:url(../img/menu-selector-icon-hover.svg) no-repeat;
-    bottom: 48%;
-}
-
-.header__select-head.open::after {
-    background: url(../img/menu-selector-icon-active.svg) no-repeat;
-    bottom: 40%;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    bottom: -2px;
+    left: -5px;         
+    background-color: #7943A4;
+    z-index: -1;
 }
 
 /* .header__select-list {
@@ -341,10 +375,10 @@ ul {
     background-size: cover;
 }
 
-.simplebar {
+.header__select-list {
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
-    margin-top: 21px;
+    margin-top: 22.5px;
     padding: 40px 40px 20px;
     width: 300px;
     max-height: 300px;
@@ -354,9 +388,9 @@ ul {
     background-color: #FFF;
     opacity: 1;
     height: 26px;
-    width: 1px;
+    width: 2px;
     border-radius: 0;
-    left: 1px;
+    left: 0.24px;
     top: 0px;
 }
 
@@ -364,23 +398,26 @@ ul {
     margin-top: 42px;
     margin-right: 19.5px;
     height: 218px;
-    max-width: 2px;
+    max-width: 2.6px;
     background-color: black;
 }
 
 .header__search {
-    margin-left: auto;
-    align-items: center;
+    width: 15.4%;
 }
 
 .header__search-button {
-    background: url(../img/search-icon.svg) no-repeat;
-    background-size: cover;
-    width: 22px;
-    height: 22px;
+    display: none;
+}
+
+.header__search-form {
+    display: flex;
+    align-items: center;
+}
+
+.header__search-icon {
     background-color: transparent;
     border: 0;
-    margin-right: 6px;
     cursor: pointer;
 }
 
@@ -388,9 +425,10 @@ ul {
     background-color: transparent;
     border: 0;
     border-bottom: 1.2px solid #FFF;
-    width: 219px;
+    width: 100%;
+    padding-bottom: 2px;
     color: var(--second-text-color);
-    transition: border-color .2s ease-out;
+    transition: border .2s ease-out;
     cursor: pointer;
 }
 
@@ -416,6 +454,10 @@ input:-ms-input-placeholder {
     color: var(--second-text-color);
     font-size: 18px;  
     background: transparent;
+}
+
+.header__search-disable {
+    display: none;
 }
 
 /* SECTION-HERO */
@@ -1691,20 +1733,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (max-width: 1493px) {
 
-    .header__logo {
-        margin-right: 50px;
-    }
-
-    .header__item:not(:last-child) {
-        margin-right: 54px;
-    }
-
-    .header__login {
-        margin-left: auto;
-    }
-
-    .header__select {
-        margin-right: 86px;
+    .header__nav {
+        width: 65%;
     }
 
     .section-catalog__accordion-artist {
@@ -1723,10 +1753,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1280px) {
-
-    body.lock {
-        overflow: hidden;
-    }
 
     .container {
         max-width: 1024px;
@@ -1866,58 +1892,13 @@ input[type="number"]::-webkit-inner-spin-button {
         color: #9d5cd0;
     }
 
-    .header__search {
-        display: block;
-    }
-
-    .header__search > div {
-        display: inline-block;
-        position: relative;
-        filter: drop-shadow(0 1px #0091c2);
-      }
-      
-      .header__search > div:after {
-        content: "";
-        background: white;
-        width: 2px;
-        height: 10px;
-        position: absolute;
-        top: 20px;
-        right: 0px;
-        transform: rotate(135deg);
-      }
-      
-      .header__search > div > input {
-        color: white;
-        font-size: 16px;
-        background: transparent;
-        width: 25px;
-        height: 25px;
-        padding: 10px;
-        border: solid 3px white;
-        outline: none;
-        border-radius: 35px;
-        transition: width 0.5s;
-      }
-      
-      .header__search > div > input::placeholder {
-        color: #efefef;
-        opacity: 0;
-        transition: opacity 150ms ease-out;
-      }
-      
-      .header__search > div > input:focus::placeholder {
-        opacity: 1;
-      }
-      
-      .header__search > div > input:focus,
-      .header__search > div > input:not(:placeholder-shown) {
-        width: 250px;
-      }
-
     .header__bottom {
         display: none;
     }
+
+
+
+
 
     .section-hero__container {
         padding-top: 114px;
