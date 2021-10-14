@@ -11,7 +11,7 @@ if ($(this).hasClass('open')) {
 }
 });
 
-$('.header__select').on('click', '.header__select-item', function () {
+$('.header__select').on('click', '.header__select-head', function () {
 $('.header__select-head').removeClass('open');
 $(this).parent().fadeOut();
 $(this).parent().prev().text($(this).text());
@@ -20,7 +20,7 @@ $(this).parent().prev().prev().val($(this).text());
 
 $(document).click(function (e) {
 if (!$(e.target).closest('.header__select').length) {
-    $('.header__select-head').removeClass('open');
+    $('.header__select-item').removeClass('open');
     $('.header__select-list').fadeOut();
 }
 });
