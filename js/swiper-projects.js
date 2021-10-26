@@ -4,8 +4,8 @@ var swiper = new Swiper(".section-projects__swiper", {
       rows: 1,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.section-projects__swiper-btn--next',
+      prevEl: '.section-projects__swiper-btn--prev',
     },
     breakpoints: {
       1280: {
@@ -13,6 +13,7 @@ var swiper = new Swiper(".section-projects__swiper", {
         grid: {
           rows: 1,
         },
+        spaceBetween: 50,
       },
       768: {
         slidesPerView: 2,
