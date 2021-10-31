@@ -1,5 +1,6 @@
 var swiper = new Swiper(".section-galery__swiper", {
   spaceBetween: 50,
+  slidesPerGroup: 1,
   pagination: {
     el: ".section-galery__swiper-pagination",
     type: "fraction",

@@ -14,14 +14,14 @@ var swiper = new Swiper(".section-editions__swiper", {
       grid: {
         rows: 1,
       },
-      spaceBetween: 50,
+      spaceBetween: 46,
     },
     668: {
       slidesPerView: 2,
       grid: {
         rows: 1,
       },
-      spaceBetween: 34,
+      spaceBetween: 50,
     },
     320: {
       slidesPerView: 1,
