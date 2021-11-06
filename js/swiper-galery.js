@@ -10,14 +10,14 @@ var swiper = new Swiper(".section-galery__swiper", {
     prevEl: '.section-galery__swiper-btn--prev',
   },
   breakpoints: {
-    1280: {
+    1281: {
       slidesPerView: 3,
       grid: {
         rows: 2,
       },
       spaceBetween: 50,
     },
-    673: {
+    721: {
       slidesPerView: 2,
       grid: {
         rows: 2,

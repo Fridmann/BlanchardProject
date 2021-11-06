@@ -9,25 +9,22 @@ var swiper = new Swiper(".section-editions__swiper", {
     prevEl: '.section-editions__swiper-btn--prev',
   },
   breakpoints: {
-    1280: {
+    1281: {
       slidesPerView: 3,
       grid: {
         rows: 1,
       },
       spaceBetween: 46,
     },
-    668: {
+    721: {
       slidesPerView: 2,
       grid: {
         rows: 1,
       },
-      spaceBetween: 50,
+      spaceBetween: 34,
     },
     320: {
-      slidesPerView: 1,
-      grid: {
-        rows: 1,
-      },
+      slidesPerView: 2,
     }
   }
 });

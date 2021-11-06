@@ -8,18 +8,19 @@ var swiper = new Swiper(".section-projects__swiper", {
       prevEl: '.section-projects__swiper-btn--prev',
     },
     breakpoints: {
-      1280: {
+      1281: {
         slidesPerView: 3,
         grid: {
           rows: 1,
         },
         spaceBetween: 50,
       },
-      768: {
+      721: {
         slidesPerView: 2,
         grid: {
           rows: 1,
         },
+        spaceBetween: 34,
       },
       320: {
         slidesPerView: 1,
