@@ -24,6 +24,13 @@ var swiper = new Swiper(".section-galery__swiper", {
       },
       spaceBetween: 34,
     },
+    426: {
+      slidesPerView: 2,
+      grid: {
+        rows: 1,
+      },
+      spaceBetween: 34,
+    },
     320: {
       slidesPerView: 1,
       grid: {

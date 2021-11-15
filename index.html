@@ -73,6 +73,7 @@
                 </a>
                 <div class="header__search-mobile">
                     <button class="header__search-button" type="button"></button>
+                    <button class="header__search-button--submit" type="submit"></button>
                     <form class="header__search-form" method="get">
                         <button class="header__search-icon" type="submit">
                             <svg width="29" height="22" viewbox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +82,7 @@
                             </svg>
                         </button>
                         <input class="header__search-input" name="search" type="search">
-                        <button class="header__search-disable" type="reset">
+                        <button class="header__search-disable" type="button">
                             <svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.7">
                                 <rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white"/>
@@ -267,7 +268,7 @@
                         <option value="Рисунок">Рисунок</option>
                         <option value="Скульптура">Скульптура</option>
                     </select>
-                    <p class="section-galery__text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний<a class="section-galery__link" href="">авторизуйтесь,</a>либо воспользуйтесь лицензией.</p> 
+                    <p class="section-galery__text">Вам предоставляется 10 бесплатных&nbsp;скачиваний. Для увеличения количества скачиваний<a class="section-galery__link" href="">авторизуйтесь,</a>либо воспользуйтесь лицензией.</p> 
                 </div>
                 <div class="section-galery__swiper-container">
                     <div class="section-galery__swiper-btns">
@@ -1045,166 +1046,82 @@
         <section id="section-events" class="section-events">
             <div class="container section-events__container">
                 <h2 class="section-events__heading">События</h2>
-                <ul class="section-events__list">
-                    <li class="section-events__item">
-                        <picture>
-                            <source media="(max-width: 721px)" srcset="img/events-img-1-mobile.jpg">
-                            <source media="(max-width: 864px)" srcset="img/events-img-1-768.jpg">
-                            <source media="(max-width: 1280px)" srcset="img/events-img-1-1024.jpg">
-                            <img class="section-events__img" src="img/events-img-1.jpg" alt="Изображение 1">
-                        </picture>
+                <div class="swiper section-events__swiper" data-mobile="false">
+                    <ul class="swiper-wrapper section-events__swiper-wrapper">
+                        <li class="swiper-slide section-events__swiper-slide">
+                            <picture>
+                                <source media="(max-width: 721px)" srcset="img/events-img-1-mobile.jpg">
+                                <source media="(max-width: 864px)" srcset="img/events-img-1-768.jpg">
+                                <source media="(max-width: 1280px)" srcset="img/events-img-1-1024.jpg">
+                                <img class="section-events__img" src="img/events-img-1.jpg" alt="Изображение 1">
+                            </picture>
                             <p class="section-events__img-desc">Музей им. Щусева с&nbsp;20&nbsp;марта по 30 апреля</p>
                             <div class="section-events__content">
                                 <h3 class="section-events__headline">Книжная гравюра в живом восприятии</h3>
                                 <p class="section-events__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. </p>
                                 <a class="section-events__link" href="">Подробнее</a>
-                            </div>
-                    </li>
-                    <li class="section-events__item">
-                        <picture>
-                            <source media="(max-width: 721px)" srcset="img/events-img-2-mobile.jpg">
-                            <source media="(max-width: 864px)" srcset="img/events-img-2-768.jpg">
-                            <source media="(max-width: 1280px)" srcset="img/events-img-2-1024.jpg">
-                            <img class="section-events__img" src="img/events-img-2.jpg" alt="Изображение 2">
-                        </picture>
+                            </div> 
+                        </li>
+                        <li class="swiper-slide section-events__swiper-slide">
+                            <picture>
+                                <source media="(max-width: 721px)" srcset="img/events-img-2-mobile.jpg">
+                                <source media="(max-width: 864px)" srcset="img/events-img-2-768.jpg">
+                                <source media="(max-width: 1280px)" srcset="img/events-img-2-1024.jpg">
+                                <img class="section-events__img" src="img/events-img-2.jpg" alt="Изображение 2">
+                            </picture>
                             <p class="section-events__img-desc">ММОМА 24&nbsp;марта 19:00</p>
                             <div class="section-events__content">
                                 <h3 class="section-events__headline">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
                                 <p class="section-events__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
                                 <a class="section-events__link" href="">Подробнее</a>
                             </div>
-                    </li>
-                    <li class="section-events__item">
-                        <picture>
-                            <source media="(max-width: 721px)" srcset="img/events-img-3-mobile.jpg">
-                            <source media="(max-width: 864px)" srcset="img/events-img-3-768.jpg">
-                            <source media="(max-width: 1280px)" srcset="img/events-img-3-1024.jpg">
-                            <img class="section-events__img" src="img/events-img-3.jpg" alt="Изображение 3">
-                        </picture>
+                        </li>
+                        <li class="swiper-slide section-events__swiper-slide">
+                            <picture>
+                                <source media="(max-width: 721px)" srcset="img/events-img-3-mobile.jpg">
+                                <source media="(max-width: 864px)" srcset="img/events-img-3-768.jpg">
+                                <source media="(max-width: 1280px)" srcset="img/events-img-3-1024.jpg">
+                                <img class="section-events__img" src="img/events-img-3.jpg" alt="Изображение 3">
+                            </picture>
                             <p class="section-events__img-desc">Еврейский музей с&nbsp;31&nbsp;марта по 21 апреля</p>
                             <div class="section-events__content">
                                 <h3 class="section-events__headline">Выставка «Формация 2020»</h3>
                                 <p class="section-events__text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
                                 <a class="section-events__link" href="">Подробнее</a>
-                            </div>
-                    </li>
-                    <li class="section-events__item">
-                        <picture>
-                            <source media="(max-width: 721px)" srcset="img/events-img-4-mobile.jpg">
-                            <source media="(max-width: 864px)" srcset="img/events-img-3-768.jpg">
-                            <source media="(max-width: 1280px)" srcset="img/events-img-4-1024.jpg">
-                            <img class="section-events__img" src="img/events-img-4.jpg" alt="Изображение 4">
-                        </picture>
+                            </div>  
+                        </li>
+                        <li class="swiper-slide section-events__swiper-slide">
+                            <picture>
+                                <source media="(max-width: 721px)" srcset="img/events-img-4-mobile.jpg">
+                                <source media="(max-width: 864px)" srcset="img/events-img-3-768.jpg">
+                                <source media="(max-width: 1280px)" srcset="img/events-img-4-1024.jpg">
+                                <img class="section-events__img" src="img/events-img-4.jpg" alt="Изображение 4">
+                            </picture>
                             <p class="section-events__img-desc">Третьяковка на Крымском валу с 30 марта по 30 апреля</p>
                             <div class="section-events__content">
                                 <h3 class="section-events__headline">XXIV Международная биеннале молодого искусства</h3>
                                 <p class="section-events__text">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
                                 <a class="section-events__link" href="">Подробнее</a>
                             </div>
-                    </li>
-                    <li class="section-events__item">
-                        <picture>
-                            <source media="(max-width: 721px)" srcset="img/events-img-5-mobile.jpg">
-                            <source media="(max-width: 864px)" srcset="img/events-img-5-768.jpg">
-                            <source media="(max-width: 1280px)" srcset="img/events-img-5-1024.jpg">
-                            <img class="section-events__img" src="img/events-img-5.jpg" alt="Изображение 5">
-                        </picture>
+                        </li>
+                        <li class="swiper-slide section-events__swiper-slide">
+                            <picture>
+                                <source media="(max-width: 721px)" srcset="img/events-img-5-mobile.jpg">
+                                <source media="(max-width: 864px)" srcset="img/events-img-5-768.jpg">
+                                <source media="(max-width: 1280px)" srcset="img/events-img-5-1024.jpg">
+                                <img class="section-events__img" src="img/events-img-5.jpg" alt="Изображение 5">
+                            </picture>
                             <p class="section-events__img-desc">ММАМ с 8 апреля по 20 мая</p>
                             <div class="section-events__content">
                                 <h3 class="section-events__headline">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
                                 <p class="section-events__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
                                 <a class="section-events__link" href="">Подробнее</a>
                             </div>
-                    </li>                       
-                </ul>
-                <button class="section-events__btn-more">Все события</button>
-                <div class="section-events__swiper-container">
-                    <div class="swiper section-events__swiper">
-                        <div class="swiper-wrapper section-events__swiper-wrapper">
-                            <div class="swiper-slide section-events__swiper-slide">
-                                <div class="section-events__item">
-                                    <picture>
-                                        <source media="(max-width: 721px)" srcset="img/events-img-1-mobile.jpg">
-                                        <source media="(max-width: 864px)" srcset="img/events-img-1-768.jpg">
-                                        <source media="(max-width: 1280px)" srcset="img/events-img-1-1024.jpg">
-                                        <img class="section-events__img" src="img/events-img-1.jpg" alt="Изображение 1">
-                                    </picture>
-                                        <p class="section-events__img-desc">Музей им. Щусева с&nbsp;20&nbsp;марта по 30 апреля</p>
-                                        <div class="section-events__content">
-                                            <h3 class="section-events__headline">Книжная гравюра в живом восприятии</h3>
-                                            <p class="section-events__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. </p>
-                                            <a class="section-events__link" href="">Подробнее</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide section-events__swiper-slide">
-                                <div class="section-events__item">
-                                    <picture>
-                                        <source media="(max-width: 721px)" srcset="img/events-img-2-mobile.jpg">
-                                        <source media="(max-width: 864px)" srcset="img/events-img-2-768.jpg">
-                                        <source media="(max-width: 1280px)" srcset="img/events-img-2-1024.jpg">
-                                        <img class="section-events__img" src="img/events-img-2.jpg" alt="Изображение 2">
-                                    </picture>
-                                    <p class="section-events__img-desc">ММОМА 24&nbsp;марта 19:00</p>
-                                    <div class="section-events__content">
-                                        <h3 class="section-events__headline">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                                        <p class="section-events__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
-                                        <a class="section-events__link" href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide section-events__swiper-slide">
-                                <div class="section-events__item">
-                                    <picture>
-                                        <source media="(max-width: 721px)" srcset="img/events-img-3-mobile.jpg">
-                                        <source media="(max-width: 864px)" srcset="img/events-img-3-768.jpg">
-                                        <source media="(max-width: 1280px)" srcset="img/events-img-3-1024.jpg">
-                                        <img class="section-events__img" src="img/events-img-3.jpg" alt="Изображение 3">
-                                    </picture>
-                                    <p class="section-events__img-desc">Еврейский музей с&nbsp;31&nbsp;марта по 21 апреля</p>
-                                    <div class="section-events__content">
-                                        <h3 class="section-events__headline">Выставка «Формация 2020»</h3>
-                                        <p class="section-events__text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
-                                        <a class="section-events__link" href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide section-events__swiper-slide">
-                                <div class="section-events__item">
-                                    <picture>
-                                        <source media="(max-width: 721px)" srcset="img/events-img-4-mobile.jpg">
-                                        <source media="(max-width: 864px)" srcset="img/events-img-3-768.jpg">
-                                        <source media="(max-width: 1280px)" srcset="img/events-img-4-1024.jpg">
-                                        <img class="section-events__img" src="img/events-img-4.jpg" alt="Изображение 4">
-                                    </picture>
-                                    <p class="section-events__img-desc">Третьяковка на Крымском валу с 30 марта по 30 апреля</p>
-                                    <div class="section-events__content">
-                                        <h3 class="section-events__headline">XXIV Международная биеннале молодого искусства</h3>
-                                        <p class="section-events__text">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
-                                        <a class="section-events__link" href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide section-events__swiper-slide">
-                                <div class="section-events__item">
-                                    <picture>
-                                        <source media="(max-width: 721px)" srcset="img/events-img-5-mobile.jpg">
-                                        <source media="(max-width: 864px)" srcset="img/events-img-5-768.jpg">
-                                        <source media="(max-width: 1280px)" srcset="img/events-img-5-1024.jpg">
-                                        <img class="section-events__img" src="img/events-img-5.jpg" alt="Изображение 5">
-                                    </picture>
-                                    <p class="section-events__img-desc">ММАМ с 8 апреля по 20 мая</p>
-                                    <div class="section-events__content">
-                                        <h3 class="section-events__headline">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                                        <p class="section-events__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                                        <a class="section-events__link" href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                     <div class="section-events__swiper-pagination"></div>
-                </div>
+                    <button class="section-events__btn-more">Все события</button>
+                </div>   
             </div>
         </section>
         <section id="section-editions" class="section-editions">
@@ -1212,70 +1129,56 @@
                 <div class="section-editions__main">
                     <div class="section-editions__left">
                         <h2 class="section-editions__heading">Издания</h2>
-                        <select class="section-editions__select">
-                            <option value="Бестселлеры">Бестселлеры</option>
-                            <option value="Искусство">Искусство</option>
-                            <option value="Архитектура">Архитектура</option>
-                            <option value="Дизайн">Дизайн</option>
-                            <option value="Мода">Мода</option>
-                            <option value="Детям">Детям</option>
-                            <option value="Художественная литература">Художественная&nbsp;литература</option>
-                            <option value="Публицистика">Публицистика</option>
-                            <option value="Путеводители">Путеводители</option>
-                            <option value="Философия">Философия</option>
-                            <option value="Учебная литература">Учебная литература</option>
-                            <option value="Журналы и газеты">Журналы и газеты</option>
-                        </select>
-                        <div class="section-checbox">
-                            <h3 class="section-checbox__headline">Категории</h3>
+                        <div class="section-checkbox">
+                            <h3 class="section-checkbox__headline">Категории</h3>
                             <div class="checkbox-container">
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_1">
-                                    <label for="checkbox_1">Бестселлеры</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_1">
+                                    <label class="checkbox-label" for="checkbox_1">Бестселлеры</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_2">
-                                    <label for="checkbox_2">Искусство</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_2">
+                                    <label class="checkbox-label" for="checkbox_2">Искусство</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_3">
-                                    <label for="checkbox_3">Архитектура</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_3">
+                                    <label class="checkbox-label" for="checkbox_3">Архитектура</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_4">
-                                    <label for="checkbox_4">Дизайн</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_4">
+                                    <label class="checkbox-label" for="checkbox_4">Дизайн</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_5">
-                                    <label for="checkbox_5">Мода</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_5">
+                                    <label class="checkbox-label" for="checkbox_5">Мода</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_6">
-                                    <label for="checkbox_6">Детям</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_6">
+                                    <label class="checkbox-label" for="checkbox_6">Детям</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_7">
-                                    <label for="checkbox_7">Художественная&nbsp;литература</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_7">
+                                    <label class="checkbox-label" for="checkbox_7">Художественная&nbsp;литература</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_8">
-                                    <label for="checkbox_8">Публицистика</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_8">
+                                    <label class="checkbox-label" for="checkbox_8">Публицистика</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_9">
-                                    <label for="checkbox_9">Путеводители</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_9">
+                                    <label class="checkbox-label" for="checkbox_9">Путеводители</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_10">
-                                    <label for="checkbox_10">Философия</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_10">
+                                    <label class="checkbox-label" for="checkbox_10">Философия</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_11">
-                                    <label for="checkbox_11">Учебная литература</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_11">
+                                    <label class="checkbox-label" for="checkbox_11">Учебная литература</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox_12">
-                                    <label for="checkbox_12">Журналы и газеты</label>
+                                    <input class="checkbox-input" type="checkbox" id="checkbox_12">
+                                    <label class="checkbox-label" for="checkbox_12">Журналы и газеты</label>
                                 </div>
                             </div>
                         </div>
@@ -1624,36 +1527,7 @@
                                 <div class="section-contacts__input-div"><input class="section-contacts__form-input" name="Телефон" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone"></div>
                                 <button class="section-contacts__form-btn">Заказать</button>
                             </form>
-                            <script src="js/just-validate.min.js"></script>
-                            <script src="js/inputmask.min.js"></script>
-                            <script>
-                                var selector = document.querySelector("input[type='tel']");
-                                var im = new Inputmask("+7(999)999-99-99");
-                    
-                                im.mask(selector);
-                    
-                                new JustValidate('.section-contacts__form', {
-                                    colorWrong: '#D11616',
-                                    rules: {
-                                        name: {
-                                            required: true,
-                                            minLenght: 2,
-                                            maxLenght: 15
-                                        },
-                                        tel: {
-                                            required: true,
-                                            function: (name, value) => {
-                                                const phone = selector.inputmask.unmaskedvalue()
-                                                return Number(phone) && phone.length === 10
-                                            }
-                                        },
-                                    },
-                                    messages: {
-                                    name: 'Недопустимый формат',
-                                    tel: 'Недопустимый формат',
-                                    },
-                                });
-                            </script>
+                            
                             <p class="section-contacts__text">Связаться в один клик</p>
                             <ul class="section-contacts__socials-list">
                                 <li class="section-contacts__socials-item">
@@ -1684,7 +1558,7 @@
                     <div class="section-contacts__right">
                         <h3 class="section-contacts__headline-mobile">Шоурум №4</h3>
                         <p class="section-contacts__place-mobile">Леонтьевский переулок, дом 5/1</p>
-                        <div id="map" style="width: 100%; height: 700px;"></div>
+                        <div class="section-contacts__map" id="map"></div>
                         <script>
                             ymaps.ready(init);
                             function init(){
@@ -1754,32 +1628,17 @@
         </div>
     </footer>
 
-    <script>
-        $(document).ready(function(){
-        $(".header__nav, .section-hero__content").on("click","a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
- 
-        //забираем идентификатор бока с атрибута href
-        var id  = $(this).attr('href'),
- 
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-        top = $(id).offset().top;
-         
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1000);
-        });
-    });
-    </script>
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/contacts-validate-input.js"></script>
+    <script src="js/scroll.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/search.js"></script>
-    <script src="js/select-editions.js"></script>
+    <script src="js/checkbox-editions.js"></script>
     <script src="js/select-galery.js"></script>
     <script src="js/select-header.js"></script>
-    <script src="js/show-more.js"></script>
     <script src="js/swiper-galery.js"></script>
     <script src="js/swiper-hero.js"></script>
     <script src="js/swiper-editions.js"></script>
@@ -1788,7 +1647,6 @@
     <script src="js/tabs.js"></script>
     <script src="js/accordion-tabs.js"></script>
     <script src="js/tippy.js"></script>
-    <script src="js/modal.js"></script>
 
 </body>
 </html>
