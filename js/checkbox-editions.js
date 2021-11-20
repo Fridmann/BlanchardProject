@@ -27,7 +27,7 @@ function toggleSpoiler() {
   } else {
     listLabels.classList.remove(labelsListActive);
     labels.forEach(item => {
-    	if (item.querySelector(inputCheckbox).checked) {
+    	if (item.parentElement.querySelector(inputCheckbox).checked) {
     	animationItem(item, labelActive, animationClass, "add");
       } else {
         animationItem(item, labelActive, animationClass, "remove");
