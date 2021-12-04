@@ -25,6 +25,10 @@ var swiper = new Swiper(".section-editions__swiper", {
     },
     320: {
       slidesPerView: 2,
-    }
+    },
+  },
+  a11y: {
+    prevSlideMessage: 'Предыдущий',
+    nextSlideMessage: 'Следующий',
   }
 });

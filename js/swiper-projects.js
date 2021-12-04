@@ -27,6 +27,10 @@ var swiper = new Swiper(".section-projects__swiper", {
         grid: {
           rows: 1,
         },
-      }
+      },
+    },
+    a11y: {
+      prevSlideMessage: 'Предыдущий',
+      nextSlideMessage: 'Следующий',
     }
 });
