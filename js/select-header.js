@@ -13,6 +13,7 @@ if ($(this).hasClass('open')) {
 
 $(document).click(function (e) {
 if (!$(e.target).closest('.header__select').length) {
+    $('.header__select-head').removeClass('open');
     $('.header__select-item').removeClass('open');
     $('.header__select-dropdown').fadeOut();
 }
